@@ -21,4 +21,4 @@ Ce projet est une **galerie photo interactive** développée en utilisant **Alpi
 2. Cliquez sur le bouton "Cacher l'image" pour fermer l'image agrandie.
 
 ## Lien vers le projet GitHub
-- [Projet GitHub](https://github.com/Lajous-Harold/Projet-Alpine.js)
+- [Projet Alpine.js](https://github.com/Lajous-Harold/Projet-Alpine.js)
