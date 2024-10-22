@@ -1,0 +1,73 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images {
+    display: flex; 
+    gap: 10px;
+}
+  
+.images img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover; 
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center; 
+    width: 100%; 
+    font-size: 4rem; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.Main {
+    position: fixed; /* Position fixe */
+    top: 50%; /* Positionne l'image au milieu verticalement */
+    left: 50%; /* Centre horizontalement l'image */
+    transform: translate(-50%, -50%); /* Centre parfaitement l'image au milieu */
+    border-radius: 10px; /* Coins arrondis */
+    z-index: 1000; /* S'assure que l'image reste au-dessus des autres éléments */
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.Main img {
+    border-radius: 10px; 
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.hide-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hide-button:hover {
+    background-color: #ff4c4c;
+  }

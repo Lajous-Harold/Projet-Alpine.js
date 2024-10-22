@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>alpine project</title>
+        <script defer src="//unpkg.com/alpinejs"></script>
+        <style>
+            [x-cloak] {
+                display: none;
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div x-data="{ img: '', show_button: false}">
+            <h1>
+                Galerie photo
+            </h1>
+            <hr>
+
+            <div class="images">
+                <div>
+                    <img src="Images/img01.jpg" @click="img = 'Images/img01.jpg'; show_button = true">
+                </div>
+                <div>
+                    <img src="Images/img02.jpg" @click="img = 'Images/img02.jpg'; show_button = true">
+                </div>
+                <div>
+                    <img src="Images/img03.jpg" @click="img = 'Images/img03.jpg'; show_button = true">
+                </div>
+                <div>
+                    <img src="Images/img04.jpg" @click="img = 'Images/img04.jpg'; show_button = true">
+                </div>
+                <div>
+                    <img src="Images/img05.jpg" @click="img = 'Images/img05.jpg'; show_button = true">
+                </div>
+                <div>
+                    <img src="Images/img06.jpg" @click="img = 'Images/img06.jpg'; show_button = true">
+                </div>
+            </div>
+
+            <hr>
+
+            <div x-show="show_button" x-cloak class="button">
+                <button @click="img = ''; show_button = false" class="hide-button">Cacher l'image</button>
+            </div>
+
+            <div x-show="img" x-cloak class="Main">
+                <img :src="img" width="763px" height="550px">
+            </div>
+
+        </div>
+    </body>
+</html>
