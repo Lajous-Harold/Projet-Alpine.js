@@ -7,7 +7,7 @@ Ce projet est une **galerie photo interactive** développée en utilisant **Alpi
 - Affichage d'une galerie d'images en ligne.
 - Lorsqu'une miniature est cliquée, l'image s'affiche en grand au centre de la fenêtre.
 - Un bouton permet de cacher l'image principale affichée.
-- L'image principale reste toujours centrée même lors du défilement de la page grâce à un positionnement `fixed`.
+- L'image principale est affichée au centre de la page avec une propriété `relative`.
 - Effet de survol (hover) sur les images avec une légère mise en valeur visuelle.
 
 ## Technologies Utilisées
@@ -21,4 +21,4 @@ Ce projet est une **galerie photo interactive** développée en utilisant **Alpi
 2. Cliquez sur le bouton "Cacher l'image" pour fermer l'image agrandie.
 
 ## Lien vers le projet GitHub
-- [Projet Alpine.js](https://github.com/Lajous-Harold/Projet-Alpine.js)
+- [Dernière version du Projet Alpine.js](https://github.com/Lajous-Harold/Projet-Alpine.js)
