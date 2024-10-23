@@ -37,12 +37,12 @@ h1 {
 }
 
 .Main {
-    position: fixed; /* Position fixe */
-    top: 50%; /* Positionne l'image au milieu verticalement */
-    left: 50%; /* Centre horizontalement l'image */
-    transform: translate(-50%, -50%); /* Centre parfaitement l'image au milieu */
-    border-radius: 10px; /* Coins arrondis */
-    z-index: 1000; /* S'assure que l'image reste au-dessus des autres éléments */
+    position: relative; 
+    top: 30%;
+    left: 70%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 10px;
+    z-index: 1000;
     transition: box-shadow 0.5s ease-in-out;
 }
 
